@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='xcute',
-    version='0.0.1',
+    version='0.0.2',
     packages=['xcute', 'xcute.templates'],
     url='https://github.com/schwa/xcute',
     license='MIT',
@@ -26,6 +26,7 @@ setup(
         'jinja2',
         'memoize',
         'pathlib2',
+        'prettytable',
         'six',
     ],
     entry_points='''
