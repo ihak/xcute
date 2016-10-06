@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: {{ travis_xcode_version }}
+before_script:
+- carthage bootstrap --no-use-binaries
+script:
+{% for command in commands -%}
+- {{ command }}
+{% endfor %}
