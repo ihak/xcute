@@ -4,7 +4,7 @@ setup(
     name='xcute',
     version='0.0.1',
     packages=['xcute', 'xcute.templates'],
-    url='https//github.com/schwa/xcute',
+    url='https://github.com/schwa/xcute',
     license='MIT',
     author='schwa',
     author_email='jwight@mac.com',
