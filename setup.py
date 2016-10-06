@@ -2,14 +2,14 @@ from distutils.core import setup
 
 setup(
     name='xcute',
-    version='0.1',
+    version='0.0.1',
     packages=['xcute', 'xcute.templates'],
     url='https//github.com/schwa/xcute',
     license='MIT',
     author='schwa',
     author_email='jwight@mac.com',
-    description='TODO',
-    keywords=[],
+    description='xcode utilitiy', # TODO: flush this out
+    keywords=['build', 'xcode', 'iOS', 'cocoa', 'macOS'],
     platform="MacOS X",
     classifiers=[
         'Development Status :: 4 - Beta',
