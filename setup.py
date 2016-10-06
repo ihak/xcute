@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='xcute',
-    version='0.0.2',
+    version='0.0.3',
     packages=['xcute', 'xcute.templates'],
     url='https://github.com/schwa/xcute',
     license='MIT',
