@@ -15,6 +15,7 @@ pip install xcute
 ```
 xcute list
 ```
+```
 +-------------------+-------------+-----------------+---------------+
 |      Project      |    Scheme   |SDK| Configuration |
 +-------------------+-------------+-----------------+---------------+
@@ -27,9 +28,10 @@ xcute list
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |     Debug     |
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |    Release    |
 +-------------------+-------------+-----------------+---------------+
-
+```
 ```
 xcute list -s SWIFT_VERSION
+```
 ```
 +-------------------+-------------+-----------------+---------------+---------------+
 |      Project      |    Scheme   |SDK| Configuration | SWIFT_VERSION |
@@ -43,9 +45,10 @@ xcute list -s SWIFT_VERSION
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |     Debug     |      3.0      |
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |    Release    |      3.0      |
 +-------------------+-------------+-----------------+---------------+---------------+
-
+```
 ```
 xcute list -s SWIFT_VERSION -s ENABLE_BITCODE
+```
 ```
 +-------------------+-------------+-----------------+---------------+---------------+----------------+
 |      Project      |    Scheme   |SDK| Configuration | SWIFT_VERSION | ENABLE_BITCODE |
@@ -59,10 +62,11 @@ xcute list -s SWIFT_VERSION -s ENABLE_BITCODE
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |     Debug     |      3.0      |NO|
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |    Release    |      3.0      |NO|
 +-------------------+-------------+-----------------+---------------+---------------+----------------+
-
+```
 Any setting you have in your scheme or target can be shown
 ```
 xcute list -s arch
+```
 ```
 +-------------------+-------------+-----------------+---------------+--------+
 |      Project      |    Scheme   |SDK| Configuration |  arch  |
@@ -76,10 +80,12 @@ xcute list -s arch
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |     Debug     | x86_64 |
 | SwiftIO.xcodeproj |   TestApp   |      macosx     |    Release    | x86_64 |
 +-------------------+-------------+-----------------+---------------+--------+
+```
 
 You can also export CI config files - for example .travis.yml in this case you can use templates (you can customise your own templates of course).
 ```
 xcute export --template=travis-simple
+```
 ```
 language: objective-c
 osx_image: xcode8
@@ -94,7 +100,7 @@ script:
 - xcodebuild -project 'SwiftIO.xcodeproj' -scheme 'SwiftIO_OSX' -sdk macosx -configuration Release build
 - xcodebuild -project 'SwiftIO.xcodeproj' -scheme 'TestApp' -sdk macosx -configuration Debug build
 - xcodebuild -project 'SwiftIO.xcodeproj' -scheme 'TestApp' -sdk macosx -configuration Release build
-
+```
 ## Contribution
 
 ```
